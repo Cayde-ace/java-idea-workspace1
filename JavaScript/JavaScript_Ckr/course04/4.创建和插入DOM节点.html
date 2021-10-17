@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4.创建和插入DOM节点</title>
+
+    <!--
+    <style type="text/css">
+
+        p{
+            color: violet;
+        }
+
+    </style>
+    -->
+
+</head>
+
+<body>
+
+<p id="js">JavaScript</p>
+
+<div id="list">
+    <p id="se">JavaSE</p>
+    <p id="ee">JavaEE</p>
+    <p id="me">JavaME</p>
+</div>
+
+<script>
+
+    var ee = document.getElementById('ee');
+    var js = document.getElementById('js');
+    var list = document.getElementById('list');
+    // 创建一个新的节点
+    var p1 = document.createElement('p');// 创建一个p标签
+
+    var d = document.createElement('style');
+
+    var p2 = document.createElement('p');
+
+    // list.appendChild(js);
+
+    p1.id = 'p1';
+    p1.innerText = '凯德六号';
+    list.appendChild(p1);
+
+    d.setAttribute('type','text/css');
+    d.innerHTML = 'p{color:darkviolet;}';
+    // 一定要注意getElementsByTagName()方法返回一个数组（列表），用下标去定位。
+    document.getElementsByTagName('head')[0].appendChild(d);// 动态地给文档添加了新的CSS定义
+
+    p2.id = 'p2';
+    p2.innerText = '黑暗之魂三';
+    list.insertBefore(p2,ee); // 将 p2 插入到 ee 之前
+
+</script>
+
+</body>
+</html>

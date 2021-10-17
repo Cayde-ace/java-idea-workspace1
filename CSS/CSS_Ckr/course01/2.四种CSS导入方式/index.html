@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+
+    <!-- 1.内部样式 -->
+    <style>
+        h1{
+            color: lightpink;
+        }
+    </style>
+
+    <!-- 2.外部样式：链接式 -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 3.外部样式：导入式 -->
+    <style>
+        @import url("css/style.css");
+    </style>
+
+</head>
+<body>
+
+<!-- 优先级：就近原则 -->
+<!-- 就近原则：越接近标签的样式优先级越高 -->
+
+<!-- 4.行内样式：在标签元素中，编写一个style属性，编写样式即可 -->
+
+<h1 style="color: darkorange">盖牌认输永远不在选择之列</h1>
+
+</body>
+</html>

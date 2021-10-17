@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作表单</title>
+</head>
+
+<body>
+
+<form action="result.html" method="post">
+    <p>
+        <span>用户名：</span> <input type="text" id="username" required>
+    </p>
+
+    <!--
+    对于单选框和复选框， value 属性返回的永远是HTML预设的值，
+    而我们需要获得的实际是用户是否“勾上了”选项，所以应该用 checked 判断
+    -->
+    <p>
+        <span>性别：</span>
+        <input type="radio" name="sex" value="man" id="boy"> 男
+        <input type="radio" name="sex" value="women" id="girl"> 女
+    </p>
+
+    <input type="submit">
+    
+</form>
+
+<script>
+
+    var input_text = document.getElementById('username');
+    var boy_radio = document.getElementById('boy');
+    var girl_radio = document.getElementById('girl');
+
+    // 修改输入框的值
+    input_text.value = 'Ace';
+
+    // 得到输入框的值
+    getValue = input_text.value;
+
+    // 对于单选框，多选框等等固定的值，boy_radio.value只能取到当前的值
+    // boy_radio.checked; //查看返回的结果，是否为true，如果为true，则被选中
+    girl_radio.checked = true; //赋值
+
+</script>
+
+
+</body>
+</html>

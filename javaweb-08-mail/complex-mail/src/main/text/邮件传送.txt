@@ -1,0 +1,9 @@
+MIME：多用途互联网邮件扩展（Multipurpose Internet Mail Extensions）
+它是一个互联网标准，扩展了电子邮件标准，使其能够支持：
+非ASCII字符文本；非文本格式附件（二进制、声音、图像等）；由多部分（multiple parts）组成的消息体；包含非ASCII字符的头信息（Header information）。
+
+MimeBodyPart类：
+javax.mail.internet.MimeBodyPart类：表示的是一个MIME消息，它和MimeMessage类一样都是从Part接口继承过来。
+
+MimeMultipart类：
+javax.mail.internet.MimeMultipart是抽象类，Multipart的实现子类。它用来组合多个MIME消息。一个MimeMultipart对象可以包含多个代表MIME消息的MimeBodyPart对象。

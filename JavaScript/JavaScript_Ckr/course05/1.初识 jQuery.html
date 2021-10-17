@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.初识 jQuery</title>
+
+    <script src="lib/jquery-3.4.1.js"></script>
+
+    <!--
+    公式：$(selector).action()
+    1.美元符号定义 jQuery
+    2.选择符（selector）"查询"和"查找" HTML 元素
+    3.jQuery 的 action() 执行对元素的操作
+    -->
+
+</head>
+
+<body>
+
+<a href="#" id="test-jquery" style="text-decoration: none">点我有弹窗</a>
+
+<script>
+
+    // 选择器就是css的选择器
+    $('#test-jquery').click(function () {
+        alert('Hello, jQuery!');
+    });
+
+</script>
+
+</body>
+</html>

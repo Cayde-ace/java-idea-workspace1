@@ -1,0 +1,44 @@
+div {
+    margin:10px;
+    padding:5px;
+}
+#father {
+    border:1px #000 solid;
+}
+
+.layer01 {
+    border:1px #F00 dashed;
+    display: inline-block;
+    float: left;
+}
+.layer02 {
+    border:1px #00F dashed;
+    display: inline-block;
+    float: left;
+}
+.layer03 {
+    border:1px #060 dashed;
+    display: inline-block;
+    float: right;
+}
+/*
+clear: right; 右侧不允许有浮动元素
+clear: left;  左侧不允许有浮动元素
+clear: both;  两侧不允许有浮动元素
+clear: none;
+*/
+.layer04 {
+    border:1px #666 dashed;
+    font-size:12px;
+    line-height:23px;
+    display: inline-block;
+    float: right;
+}
+
+/* 4.父级添加伪类after，和第二种方法很像，可以说是为第二种方法的升级版*/
+/* 写法比上面稍微复杂一点，但是没有副作用，推荐使用 */
+.clear:after{
+    content: ""; /* 在clear类后面添加内容为空 */
+    display: block; /* 把添加的内容转化为块元素，因为 clear 样式适用于块级元素，因此一定要设置 display:block */
+    clear: both; /* 清除这个元素两边的浮动，自动跑到下面去 */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    function getAge() {
+        // 今年 - 出生的年
+        var now = new Date().getFullYear();
+        return now-this.bitrh;
+    }
+
+    var kuangshen = {
+        name: '秦疆',
+        bitrh: 2000,
+        age: getAge
+    };
+
+    // kuangshen.age() ok
+
+    getAge.apply(kuangshen,[]);// this，指向了 kuangshen，参数为空
+
+
+</script>
+
+</body>
+</html>

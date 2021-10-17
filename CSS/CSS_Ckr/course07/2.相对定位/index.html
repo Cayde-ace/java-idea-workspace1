@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+
+    <style>
+
+        body{
+            padding: 20px;
+            border: 2px solid gold;
+        }
+
+        /* 比较标准的格式定义 */
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        #father{
+            border: 1px solid black;
+            padding: 0;
+        }
+
+        /* relative：相对定位 */
+        /* 相对自身原来位置进行偏移，偏移设置：top、left、right、bottom */
+        /* 记住相反就行
+        top->bottom
+        bottom->top
+        left->right
+        right->left
+        */
+        #first{
+            background-color: violet;
+            border: 2px dashed darkviolet;
+            position: relative;
+            top: -20px;
+            left: 20px;
+        }
+
+        #second{
+            background-color: skyblue;
+            border: 2px dashed blue;
+            position: static;
+        }
+
+        #third{
+            background-color: orange;
+            border: 2px dashed orangered;
+            position: relative;
+            bottom: -20px;
+            right: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+
+</body>
+</html>

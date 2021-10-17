@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接伪类</title>
+
+    <style>
+
+        /* 默认的颜色 */
+        a{
+            text-decoration: none;
+            color: violet;
+        }
+
+        /* 未单击访问时超链接的样式 */
+        a:link{
+            color: cornflowerblue;
+        }
+
+        /* 单击访问后超链接的样式 */
+        a:visited{
+            color: deeppink;
+        }
+
+        /*鼠标悬浮的状态（只需要记住：hover） */
+        a:hover{
+            color: gold;
+            font-size: 30px;
+        }
+
+        /* 鼠标按住未释放的状态 */
+        a:active{
+            color: greenyellow;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+<!--
+href="#"是指链接到当前页面，回到最顶部。如果当前页面中需要滚动的话，那么用这种方式就可以直接回到顶部。
+-->
+<a href="#">
+    <img src="images/cayde.jpg" alt="cayde 6">
+</a>
+
+<p>
+    <a href="#">
+        凯德六号：盖牌认输永远不在选择之列！
+    </a>
+</p>
+
+<p>
+    <a href="#">
+        命运二：遗落之族
+    </a>
+</p>
+
+</body>
+</html>

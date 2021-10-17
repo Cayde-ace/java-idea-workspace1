@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型及边框</title>
+
+    <style>
+
+        /* body总有一个默认的外边距 margin:8 */
+
+        #box{
+            width: 300px;
+            /*height: 120px;*/
+            /* border: 粗细，样式，颜色 */
+            /*
+            边框粗细 border-width
+            边框样式 border-style
+            边框颜色 border-color
+            */
+            border: 1px solid blueviolet;
+        }
+
+        h2{
+            font-size: 20px;
+            background-color: darkviolet;
+            line-height: 30px;
+            color: black;
+            margin: 0 0 10px 0;
+        }
+
+        form{
+            background: pink;
+        }
+
+        form div:nth-of-type(1){
+            margin: 5px 0;
+            padding: 5px 0;
+            border: 3px dashed brown;
+        }
+        form div:nth-of-type(2){
+            margin: 5px 0;
+            padding: 5px 0;
+            border: 3px dashed darkorange;
+        }
+        form div:nth-of-type(3){
+            margin: 5px 0;
+            padding: 5px 0;
+            border: 3px dashed red;
+        }
+
+        form div:nth-of-type(1) input{
+            margin: 5px 0;
+            border: 3px solid blue;
+        }
+        form div:nth-of-type(2) input{
+            margin: 5px 0;
+            border: 3px solid deepskyblue;
+        }
+        form div:nth-of-type(3) input{
+            margin: 5px 0;
+            border: 3px solid skyblue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="box">
+
+    <h2>会员登录</h2>
+
+    <form action="#">
+
+        <div>
+            <span>用户名：</span>
+            <input type="text">
+        </div>
+
+        <div>
+            <span>密码：&nbsp;&nbsp;&nbsp;</span>
+            <input type="text">
+        </div>
+
+        <div>
+            <span>邮箱：&nbsp;&nbsp;&nbsp;</span>
+            <input type="text">
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

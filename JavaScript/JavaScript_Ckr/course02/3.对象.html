@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+
+    <script>
+
+        'use strict';
+    //  JavaScript的对象是一种无序的集合数据类型，它由若干键值对组成。键是字符串，值可以是任意类型。
+    //  JavaScript是动态语言，而Java为静态语言。
+
+        let person = {
+            name: '凯德六号',
+            birth: 1990,
+            school: 'No.1 Middle School',
+            height: 1.70,
+            weight: 65,
+            score: null
+        }
+
+        //  由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性。
+        delete person.birth;
+        person.age = 30;
+
+        alert(person.age);//  30
+
+        alert('toString' in person);//  true
+
+        alert(person.hasOwnProperty('toString'));//  false
+
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

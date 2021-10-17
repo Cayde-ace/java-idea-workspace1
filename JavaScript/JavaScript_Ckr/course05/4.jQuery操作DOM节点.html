@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery操作DOM节点</title>
+
+    <script src="lib/jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+
+<ul id="test-ul">
+
+    <li class="li js">JavaScript</li>
+    <li name="python">Python</li>
+    <li class="li ace">Ace,I'm coming home!</li>
+    <li class="li nb">NB</li>
+
+</ul>
+
+<hr>
+
+<ul id="test-css">
+
+    <li class="lang dy"><span>JavaScript</span></li>
+    <li class="lang"><span>Java</span></li>
+    <li class="lang dy"><span>Python</span></li>
+    <li class="lang"><span>Swift</span></li>
+    <li class="lang dy"><span>Scheme</span></li>
+
+</ul>
+
+<div id="test-div" name="Test">Cayde 6</div>
+
+<script>
+
+    $('#test-ul li[name="python"]').css("color","darkviolet");
+
+    $('li[class^="li a"]').css("color","violet");
+
+    $('li[class$="b"]').html('<strong>ACE</strong>');
+
+    $('#test-css li[class$="g"] span').css('background-color','darkviolet').css('color','gold');
+
+    $('#test-css .dy > span').css('background-color','gold').css('color','red');
+
+    $('.js').hide();
+    $('.js').show();
+
+    var w = $(window).width();
+    var h = $(window).height();
+
+</script>
+
+</body>
+</html>

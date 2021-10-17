@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>方法</title>
+</head>
+
+<body>
+
+
+<script>
+
+    'use strict';
+    // 绑定到对象上的函数称为方法，和普通函数也没啥区别。
+
+    function getAge() {
+        var y = new Date().getFullYear();
+        return y - this.birth;
+    }
+    var xiaoming = {
+        name: '小明',
+        birth: 1990,
+        age: getAge
+    };
+
+    console.log(xiaoming.age()); // 31，2021-1990 = 31
+    // getAge(); // NaN
+
+    // 要指定函数的 this 指向哪个对象，可以用函数本身的 apply 方法，它接收两个参数，第一个参数
+    // 就是需要绑定的 this 变量，第二个参数是 Array ，表示函数本身的参数。
+
+    console.log(getAge.apply(xiaoming,[]));// 31
+
+</script>
+
+</body>
+</html>

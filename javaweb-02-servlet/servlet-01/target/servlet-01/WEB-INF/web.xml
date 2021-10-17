@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+
+<!--
+由于客户端是通过 URL 地址访问web服务器中的资源，所以Servlet程序若想被外界访问，必须把servlet程序映射到一个URL地址上，
+这个工作在web.xml文件中使用<servlet>元素和<servlet-mapping>元素完成。
+<servlet>元素用于注册Servlet，它包含有两个主要的子元素：<servlet-name>和<servlet-class>，
+分别用于设置Servlet的注册名称和Servlet的完整类名。
+一个<servlet-mapping>元素用于映射一个已注册的Servlet的一个对外访问路径，
+它包含有两个子元素：<servlet-name>和<url-pattern>，分别用于指定Servlet的注册名称和Servlet的对外访问路径。
+需要注意的是：
+一个<servlet>可以对应多个<servlet-mapping>,从而一个Servlet可以有多个路径来访问。
+-->
+
+  <!-- 注册 Servlet -->
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.ckr.servlet.HelloServlet</servlet-class>
+  </servlet>
+
+  <!-- Servlet 的请求路径 -->
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hi</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello/*</url-pattern>
+  </servlet-mapping>
+
+  <!-- 默认请求路径 -->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>hello</servlet-name>-->
+<!--    <url-pattern>/*</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+  <!--
+  可以自定义后缀实现请求映射   *.do
+  注意：*前面不能加项目映射的路径
+  -->
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>*.ace</url-pattern>
+  </servlet-mapping>
+
+  <!-- 404 -->
+  <!-- 优先级问题：指定了固有的映射路径优先级最高，如果找不到就会走默认的请求路径 -->
+  <servlet>
+    <servlet-name>error</servlet-name>
+    <servlet-class>com.ckr.servlet.ErrorServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>error</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
+
+  <!--  <display-name>Welcome to Tomcat</display-name>-->
+<!--  <description>-->
+<!--    Welcome to Tomcat-->
+<!--  </description>-->
+
+</web-app>

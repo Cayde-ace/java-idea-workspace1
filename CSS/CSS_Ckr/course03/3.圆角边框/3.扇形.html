@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扇形</title>
+
+    <style>
+
+        /*
+        使用border-radius制作特殊图形：扇形
+        利用border-radius属性制作扇形遵循 “ 三同，一不同 ” 原则
+        1.“三同”是元素宽度、高度、圆角半径相同
+        2.“一不同”是圆角取值位置不同
+        */
+        .div1{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            /*border: 5px solid violet;*/
+            background: darkviolet;
+            border-radius: 100px 0 0 0;
+        }
+
+        .div2{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            /*border: 5px solid violet;*/
+            background: pink;
+            border-radius: 0 100px 0 0;
+        }
+
+        .div3{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            /*border: 5px solid violet;*/
+            background: slateblue;
+            border-radius: 0 0 100px 0;
+        }
+
+        .div4{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            /*border: 5px solid violet;*/
+            background: purple;
+            border-radius: 0 0 0 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+
+</body>
+</html>

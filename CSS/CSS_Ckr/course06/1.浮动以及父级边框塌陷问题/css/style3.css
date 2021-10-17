@@ -1,0 +1,43 @@
+div {
+    margin:10px;
+    padding:5px;
+}
+#father {
+    border:1px #000 solid;
+    /* 3.父级添加overflow属性（溢出处理） */
+    /*
+    hidden属性值，这个值在网页中经常使用，通常与<div>宽度结合使用，设置<div>自动扩展高度，
+    或者隐藏超出的内容。
+    简单，下拉列表框的场景不能用
+    */
+    overflow: hidden;
+}
+
+.layer01 {
+    border:1px #F00 dashed;
+    display: inline-block;
+    float: left;
+}
+.layer02 {
+    border:1px #00F dashed;
+    display: inline-block;
+    float: left;
+}
+.layer03 {
+    border:1px #060 dashed;
+    display: inline-block;
+    float: right;
+}
+/*
+clear: right; 右侧不允许有浮动元素
+clear: left;  左侧不允许有浮动元素
+clear: both;  两侧不允许有浮动元素
+clear: none;
+*/
+.layer04 {
+    border:1px #666 dashed;
+    font-size:12px;
+    line-height:23px;
+    display: inline-block;
+    float: right;
+}

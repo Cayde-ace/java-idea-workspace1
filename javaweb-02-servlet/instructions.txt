@@ -1,0 +1,6 @@
+结构说明：IDEA
+Project  相当于eclipse的  workplace
+Module  相当于eclipse的  project
+Libraries  IDEA真正读jar包的地方
+Facets  配置web.xml路径的地方（包括spring也在这配置）
+Artifacts  打jar、war包的地方

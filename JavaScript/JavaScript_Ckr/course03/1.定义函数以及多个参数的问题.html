@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定义函数以及多个参数的问题</title>
+</head>
+<body>
+
+<script>
+    'use strict';
+    var abs = function (x) {
+        if (x >= 0) {
+            return x;
+        } else {
+            return -x;
+        }
+    };
+
+    console.log(abs(-6))
+
+    function foo(a, b, ...rest) {
+        console.log('a = ' + a);
+        console.log('b = ' + b);
+        console.log(rest);
+    }
+
+    console.log(foo(1, 2, 3, 4, 5));
+    // 结果:
+    // a = 1
+    // b = 2
+    // Array [ 3, 4, 5 ]
+
+    console.log(foo(1));
+    // 结果:
+    // a = 1
+    // b = undefined
+    // Array []
+
+</script>
+
+</body>
+</html>

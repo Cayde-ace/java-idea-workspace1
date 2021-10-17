@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景样式</title>
+
+    <style>
+
+        div{
+            width: 1000px;
+            height: 800px;
+            border: 1px solid darkviolet;
+            /*
+            默认是全部平铺的 repeat
+            repeat:沿水平和垂直两个方向平铺
+            */
+            background-image: url("images/good_ace.jpg");
+        }
+
+        /* repeat-x:只沿水平方向平铺 */
+        .div2{
+            background-repeat: repeat-x;
+        }
+
+        /* repeat-y:只沿垂直方向平铺 */
+        .div3{
+            background-repeat: repeat-y;
+        }
+
+        /* no-repeat:不平铺，只显示一次 */
+        .div4{
+            background-repeat: no-repeat;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+
+</body>
+</html>

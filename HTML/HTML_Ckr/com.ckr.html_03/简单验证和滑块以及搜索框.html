@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单验证和滑块以及搜索框</title>
+</head>
+<body>
+
+<form action="result.html" method="get">
+
+    <!--邮箱验证 email-->
+    <p>邮箱：
+        <input type="email" name="email">
+    </p>
+
+    <!--url网址验证 url-->
+    <p>url:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="url" name="url">
+    </p>
+
+    <!--数字验证 number
+    数字：商品数量，计数  type="number"
+    最小值  min="0"
+    最大值  max="200"
+    步长    step="20"
+    -->
+    <p>商品数量：
+        <input type="number" name="number" min="0" max="200" step="20">
+    </p>
+
+    <!--滑块 range
+    默认值0~100
+    -->
+    <p>音量：
+        <input type="range" name="volume" min="0" max="100" step="2">
+    </p>
+
+    <!--搜索框 search-->
+    <p>搜索游戏：
+        <input type="search" name="search games">
+    </p>
+
+    <p>
+        <input type="submit" name="submit"  value="提交">
+        <input type="reset" name="reset"  value="重置">
+    </p>
+
+</form>
+
+</body>
+</html>

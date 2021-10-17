@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多选框和按钮</title>
+</head>
+<body>
+
+<form action="result.html" method="get">
+
+    <!--多选框 type="checkbox"
+        name： 必填项，如果是分组，则名称一致
+        value： 表单提交的值
+        checked： 默认选中
+        disabled： 禁用
+        注意事项：默认没有值，需要再input type="checkbox" 后增加多选框的属性
+    -->
+    <p>爱好：
+        <input type="checkbox" name="hobby" value="study" checked>学习
+        <input type="checkbox" name="hobby" value="chat">聊天
+        <input type="checkbox" name="hobby" value="game">游戏
+        <input type="checkbox" name="hobby" value="football">足球
+        <input type="checkbox" name="hobby" value="girl" disabled>女孩
+    </p>
+
+    <!--按钮
+        input type="button" 普通按钮
+        input type="image"  图像按钮
+        input type="submit" 提交按钮
+        input type="reset"  重置按钮
+
+        value：按钮上的文字
+        注意：图像按钮 "type" 属性没有设置为 "submit" ，但仍然具备提交表单的功能。
+    -->
+    <p>按钮：
+        <input type="button" name="btn1" value="普通按钮">
+        <input type="submit" name="btn2" value="提交按钮">
+        <input type="reset" name="btn3" value="重置按钮">
+
+        <input type="image" src="../resources/images/ds3.jpg" name="btn4" value="图像按钮" title="dark souls 3">
+    </p>
+
+</form>
+
+</body>
+</html>

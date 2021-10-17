@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java/JDBCFirstDemo.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java1/TestDelete.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java1/TestInjection.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java1/TestInsert.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java1/TestQuery.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java1/TestUpdate.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java2/TestDelete.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java2/TestInjection.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java2/TestInsert.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java2/TestQuery.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java2/TestUpdate.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java3/TestTransaction1.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java3/TestTransaction2.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java3/TestTransaction3.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java4/TestDBCP.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java4/TestDBCP1.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java5/TestC3P0.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/jdbc_ckr01/src/com/ckr/java5/TestC3P01.java" dialect="MySQL" />
+  </component>
+</project>

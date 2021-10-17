@@ -1,0 +1,49 @@
+#content{
+    width: 350px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 25px;
+    border: 2px dashed violet;
+    text-align: center;
+}
+
+ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* 父级元素相对定位 */
+#content ul{
+    padding: 0;
+    position: relative;
+}
+
+.tipText,.tipBg{
+    width: 350px;
+    height: 25px;
+    position: absolute;
+    /* 浏览器调试 */
+    top: 390px;
+}
+
+.tipText{
+    color: pink;
+    /*
+    z-index属性:调整元素定位时重叠层的上下位置
+    1.z-index属性值：整数，默认值为0
+    2.设置了position属性时，z-index属性可以设置各元素之间的重叠高低关系
+    3.z-index值大的层位于其值小的层上方
+    */
+    z-index: 99;
+}
+
+.tipBg{
+    background: darkviolet;
+    /* opacity：背景透明度，值越小越透明 */
+    opacity: 0.5;
+    /* filter: alpha(opacity=50);不起作用 */
+    /*filter: alpha(opacity=50);*/
+}

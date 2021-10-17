@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内联框架的学习</title>
+</head>
+<body>
+
+<!--
+iframe 内联框架
+src：引用页面地址
+name：框架标识名
+-->
+
+<!--<iframe src="https://www.baidu.com/" frameborder="0" width="1000px" height="600px"></iframe>-->
+
+<!--
+在被打开的框架上加 name 属性，如 name="Ace"，
+在超链接上设置 target 目标窗口属性为希望显示的框架窗口名。
+相当于在名为 Ace 的内联框架中打开超链接。
+-->
+<iframe src="" frameborder="0" name="Ace"></iframe>
+
+<a href="表格.html" target="Ace">点击显示</a>
+
+</body>
+</html>

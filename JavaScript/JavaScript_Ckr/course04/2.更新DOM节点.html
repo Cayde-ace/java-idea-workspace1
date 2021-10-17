@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2.更新DOM节点</title>
+</head>
+
+<body>
+
+<div id="id1">
+
+</div>
+
+<div id="id2">
+<!--每个故事都有结局，这就是我的结局！-->
+</div>
+
+<div class="class1">
+
+</div>
+
+<p>
+
+</p>
+
+<script>
+
+    var id1 = document.getElementById('id1');
+    var id2 = document.getElementById('id2');
+    var class1 = document.getElementsByClassName('class1');
+
+    /*
+    class1
+     HTMLCollection [div.class1]
+     0: div.class1
+     length: 1
+     [[Prototype]]: HTMLCollection
+     */
+
+    var tag1 = document.getElementsByTagName('p');
+
+    /*
+    tag1
+     HTMLCollection [p]
+     0: p
+     length: 1
+     [[Prototype]]: HTMLCollection
+     */
+
+    //由此可见，getElementsByClassName()和 getElementsByTagName()方法返回的是一个数组，要用下标去定位。
+
+    id1.innerText = "盖牌认输永远不在选择之列！";
+    id2.innerHTML = "<strong>每个故事都有结局，这就是我的结局!</strong>";
+    class1[0].innerHTML = "<br><hr>凯德六号<hr><br>";
+    tag1[0].innerText = "黑桃A";
+
+    id1.style.fontSize = '50px';
+    id2.style.color = 'violet';
+
+</script>
+
+</body>
+</html>

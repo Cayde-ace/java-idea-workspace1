@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaScript.iml" filepath="$PROJECT_DIR$/JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript_Ckr/JavaScript_Ckr.iml" filepath="$PROJECT_DIR$/JavaScript_Ckr/JavaScript_Ckr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaScript_Kuang/JavaScript_Kuang.iml" filepath="$PROJECT_DIR$/JavaScript_Kuang/JavaScript_Kuang.iml" />
+    </modules>
+  </component>
+</project>

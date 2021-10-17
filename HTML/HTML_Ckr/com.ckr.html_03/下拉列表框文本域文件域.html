@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉列表框文本域文件域</title>
+</head>
+<body>
+
+<form action="result.html" method="get">
+
+    <!--下拉列表框 select
+    select
+        name： 组件名字 （必填）
+        size:  显示的数量，默认为 1
+
+    option： 选项
+        value （必填）
+        option标签中间写下拉框的值
+        selected： 默认选中
+    -->
+    <p>国家：
+        <select name="country" size="2">
+            <option value="China">中国</option>
+            <option value="America" selected>美国</option>
+            <option value="Russia">俄罗斯</option>
+            <option value="France">法国</option>
+            <option value="Britain">英国</option>
+        </select>
+    </p>
+
+    <hr/>
+
+    <!--文本域  textarea：多行文本域
+    cols：列数
+    rows：行数
+    -->
+    <p>
+        <textarea name="textarea" id="" cols="30" rows="20">盖牌认输永远不在选择之列！</textarea>
+    </p>
+
+    <hr/>
+
+    <!--文件域
+    input type="file" name="files"
+    
+    表单，需要支持提交复杂文件  enctype="multipart/form-data"
+    未来：文件上传会用到
+    -->
+    <p>
+        <input type="file" name="files">
+        <input type="button" name="upload" value="上传">
+    </p>
+
+
+</form>
+
+</body>
+</html>

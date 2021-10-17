@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量的作用域</title>
+</head>
+<body>
+
+
+<script>
+
+    'use strict';
+    const PI = 3.14; // 只读变量
+    console.log(PI);
+    // PI = 123; // TypeError: Assignment to constant variable.
+    // console.log(PI);
+
+    var course = 'Learn JavaScript';
+    alert(course); // 'Learn JavaScript'
+    alert(window.course); // 'Learn JavaScript'
+
+    let name = 'Cayde 6';
+    alert(name);// 'Cayde 6'
+    alert(window.name);// undefined
+
+    /*
+    全局变量会绑定到 window 上，不同的JavaScript文件如果使用了相同的全局变量，或者定义了相同名
+    字的顶层函数，都会造成命名冲突，并且很难被发现。减少冲突的一个方法是把自己的所有变量和函数
+    全部绑定到一个全局变量中。
+     */
+
+    // 唯一的全局变量名字空间 MYAPP
+    var MYAPP = {};
+
+    // 其他变量:
+    MYAPP.name = 'myapp';
+    MYAPP.version = 1.0;
+
+    // 其他函数:
+    MYAPP.foo = function () {
+        return 'foo';
+    };
+
+    alert(MYAPP.version);
+
+    // let关键字申明局部变量
+    // const定义常量
+
+</script>
+
+</body>
+</html>

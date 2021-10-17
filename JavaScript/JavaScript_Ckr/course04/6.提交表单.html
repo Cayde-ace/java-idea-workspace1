@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交表单</title>
+
+    <!--MD5工具类-->
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+</head>
+
+<body>
+
+<!--
+表单绑定提交事件
+onsubmit = 绑定一个提交检测的函数。true，false
+将这个结果返回给表单，使用 onsubmit 接收！
+onsubmit="return inspect()"
+-->
+<form action="result.html" method="post" onsubmit="return inspect()">
+    <p>
+        <span>用户名：</span> <input type="text" id="username" name="username">
+    </p>
+
+    <p>
+        <span>密码：&nbsp;&nbsp;&nbsp;&nbsp;</span> <input type="password" id="input-password">
+    </p>
+
+    <p>
+        <button type="submit">提交</button>
+    </p>
+
+    <input type="hidden" id="md5-password" name="password">
+
+    <!-- 绑定事件 onclick 被点击 -->
+</form>
+
+
+<script>
+
+    function inspect() {
+        alert('检查');
+        var uname = document.getElementById('username');
+        var pwd = document.getElementById('input-password');
+        var md5pwd = document.getElementById('md5-password');
+
+        // pwd.value = md5(pwd.value);
+
+        /*
+        上述在用户输入了密码提交时，密码框的显示会突然从几个 * 变成32个
+        * （因为 MD5 有32个字符）。
+         */
+
+        // 要想不改变用户的输入，可以利用 <input type="hidden"> 实现。
+        md5pwd.value = md5(pwd.value);
+
+        // 可以校验判断表单内容，true：通过提交，false：阻止提交。
+        // ez
+        // username: cayde 6
+        // password: f379eaf3c831b04de153469d1bec345e
+        return true;
+    }
+
+</script>
+
+
+</body>
+</html>

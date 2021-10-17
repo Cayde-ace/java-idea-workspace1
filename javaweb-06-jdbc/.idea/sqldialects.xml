@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ckr/jdbc/TestJdbc01.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ckr/jdbc/TestJdbc02.java" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/ckr/jdbc/TestJdbc03.java" dialect="MySQL" />
+  </component>
+  <component name="SqlResolveMappings">
+    <file url="PROJECT" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;458273dd-23c2-45b5-a151-49b9d9c52d33&quot;    }   }  } }}" />
+  </component>
+</project>

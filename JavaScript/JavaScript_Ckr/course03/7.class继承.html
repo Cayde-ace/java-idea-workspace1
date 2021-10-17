@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class继承</title>
+
+    <script>
+
+        'use strict';
+        //  ES6 之后
+        // 定义一个学生的类
+        class Student{
+            constructor(name){
+                this.name = name;
+            }
+
+            hello(){
+                alert('hello')
+            }
+        }
+
+        class PrimaryStudent extends Student{
+            constructor(name,grade){
+                super(name);
+                this.grade = grade;
+            }
+
+            myGrade(){
+                alert('我是一名小学生')
+            }
+        }
+
+        var xiaoming = new Student("xiaoming");
+        var xiaohong = new PrimaryStudent("xiaohong",4);
+
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

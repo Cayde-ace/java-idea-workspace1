@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单的应用</title>
+</head>
+<body>
+
+<form action="result.html" method="get">
+
+    <!--表单的应用
+    隐藏域 hidden
+    只读 readonly
+    禁用 disabled
+    -->
+    <p>
+        用户名：<input type="text" name="username" value="凯德六号" size="30" maxlength="10" readonly>
+    </p>
+
+    <p>
+        密&nbsp;&nbsp;&nbsp;码：<input type="password" name="password" size="30" value="123456" hidden>
+    </p>
+
+    <p>心情：
+        <input type="radio" name="mood" value="happy" checked>快乐
+        <input type="radio" name="mood" value="unhappy">不快乐
+        <input type="radio" name="mood" value="sad" disabled>悲伤
+    </p>
+
+    <!--搜索框 search-->
+    <p>搜索游戏：
+        <input type="search" name="search games" id="mark2">
+    </p>
+
+    <!-- 增强鼠标可用性 -->
+    <p>
+        <label for="mark1">点击，鼠标定位到如下文本框内</label>
+        <input type="text" id="mark1">
+    </p>
+
+    <p>
+        <label for="mark2">点击，鼠标定位到搜索游戏框</label>
+    </p>
+
+    <p>
+        <input type="submit" name="submit"  value="提交">
+        <input type="reset" name="reset"  value="重置">
+    </p>
+
+</form>
+
+</body>
+</html>

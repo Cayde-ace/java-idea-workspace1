@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片标签</title>
+</head>
+<body>
+
+<!-- 标签中带有参数的  key=value -->
+
+<!--
+src： 资源图片 ： 图片的路径
+相对地址（推荐使用），绝对地址（尽量别用）
+../：表示上一级目录
+alt(alternative)： 图片加载失败，表示图片的问题，也即图片描述
+title： 鼠标放在图片上的悬浮提示
+width： 宽
+height：高
+-->
+
+<!--
+我们在引用一些文件时，最好的选择是使用相对路径，这样当目录结构不变时依然可以正常引用。
+如果使用绝对路径，当资源目录变化时，就会导致资源无法引用的问题，比如：图片从D盘迁移至E盘时，在
+使用绝对路径的情况下就无法正常显示。
+-->
+<img src="../resources/images/ace.jpg" alt="Ace" width="1000" height="1000" title="王牌"/>
+<br/>
+<!--
+<img src="D:\workspace\java_workspace\idea-workspace1\HTML\HTML_Ckr\resources\images\destiny2.jpg" alt="Destiny2"/>
+上述用绝对地址不行，无法识别。
+-->
+<img src="../resources/images/destiny2.jpg" alt="Destiny2" title="命运2" width="1920" height="1080"/>
+</body>
+
+</html>

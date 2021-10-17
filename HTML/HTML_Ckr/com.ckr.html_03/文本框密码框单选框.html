@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本框密码框单选框</title>
+</head>
+<body>
+
+<form action="result.html" method="get">
+
+    <!--文本框 type="text"
+        name：文本框名称(必填)
+        value ：文本框默认的初始值
+        size： 文本框的长度
+        maxlength： 文本框的最大输入长度
+    -->
+    <p>
+        用户名：<input type="text" name="username" value="凯德六号" size="30" maxlength="10">
+    </p>
+
+    <!--密码框 type="password"
+        size="30" 密码框的长度
+    -->
+    <p>
+        密&nbsp;&nbsp;&nbsp;码：<input type="password" name="password" size="30">
+    </p>
+
+    <!--单选框 type="radio"
+        单选框 组(Group)
+        同一组单选按钮，name属性值必须相同，才能在选中单选按钮时达到互斥
+        value： 单选框的值，表单提交的值
+        name： 表示组，名字相同，则自动分组，必须要分组
+        checked： 默认选中
+        disabled： 禁用
+        注意事项：默认没有值，需要在 input type="radio" 后增加单选框的属性
+    -->
+    <p>心情：
+        <input type="radio" name="mood" value="happy" checked>快乐
+        <input type="radio" name="mood" value="unhappy">不快乐
+        <input type="radio" name="mood" value="sad" disabled>悲伤
+    </p>
+
+
+</form>
+
+</body>
+</html>

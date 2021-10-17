@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+
+    <!--
+    标准文档流：指元素根据块元素或行内元素的特性按从上到下，从左到右的方式自然排列。这也是元素默认的排列方式。
+    -->
+    <style>
+
+        /*
+         display属性：
+         1.block 块元素
+         2.inline 行内元素
+         3.inline-block 是块元素，但是可以内联，在一行！行内块元素
+         4.none 设置元素不会被显示
+        */
+
+        /*
+        display特性：
+        1.块级元素与行级元素的转变（block、inline）
+        2.控制块元素排到一行（inline-block）
+        3.控制元素的显示和隐藏（none）
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            border: 3px solid violet;
+            /*display: block;*/
+            /*display: inline;*/
+            /*display: none;*/
+            display: inline-block;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            border: 3px solid purple;
+            /*display: none;*/
+            /*display: inline;*/
+            /*display: block;*/
+            /*display: inline-block;：没有对齐*/
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>div块元素</div>
+    <span>span行内元素</span>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型继承</title>
+
+    <script>
+
+        'use strict';
+
+        // 原型（prototype）
+
+        /*
+        JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系
+        不过是把一个对象的原型指向另一个对象而已。
+        */
+
+        var Student = {
+            name: "Bill",
+            age: 30,
+            run: function () {
+                console.log(this.name + " run....");
+            }
+        };
+
+        var xiaoming = {
+            name: "xiaoming"
+        };
+
+        //原型对象：把xiaoming的原型指向了Student对象
+        xiaoming.__proto__ = Student;
+
+
+        var Bird = {
+            fly: function () {
+                console.log(this.name + " fly....");
+            }
+        };
+
+        xiaoming.__proto__ = Bird;
+
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

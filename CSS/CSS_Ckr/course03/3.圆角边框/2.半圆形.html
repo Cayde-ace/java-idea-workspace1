@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>半圆形</title>
+
+    <!--
+    使用border-radius制作特殊图形：半圆形
+    1.制作上半圆或下半圆时，元素的宽度是高度的2倍，而且圆角半径为元素的高度值
+    2.制作左半圆或右半圆时，元素的高度是宽度的2倍，而且圆角半径为元素的宽度值
+    -->
+    <style>
+
+        /* 下半圆 */
+        .div1{
+            width: 200px;
+            height: 100px;
+            margin: 30px;
+            /*border: 5px solid violet;*/
+            background: darkviolet;
+            border-radius: 0 0 100px 100px;
+        }
+
+        /* 右半圆 */
+        .div2{
+            width: 100px;
+            height: 200px;
+            margin: 30px;
+            /*border: 5px solid violet;*/
+            background: pink;
+            border-radius: 0 100px 100px 0;
+        }
+
+        /* ez */
+        img{
+            /*border-radius: 50%;*/
+            border-radius: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="div1"></div>
+<div class="div2"></div>
+
+<img src="images/good_ace.jpg" alt="Cayde 6">
+
+</body>
+</html>

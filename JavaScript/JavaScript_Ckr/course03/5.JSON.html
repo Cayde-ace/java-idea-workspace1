@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+
+    <script>
+
+        'use strict';
+        var man = {
+            name:'Cayde 6',
+            age:26,
+            id:666,
+            sex:true
+        }
+
+        // 将js对象转换成json字符串
+        var s = JSON.stringify(man);
+        console.log(s);// {"name":"Cayde 6","age":26,"id":666,"sex":true}
+
+        // 将json字符串转换为js对象
+        var parse = JSON.parse(s);
+        console.log(parse);// {name: "Cayde 6", age: 26, id: 666, sex: true}
+
+        console.log(parse.name,parse.age);// Cayde 6 26
+
+        var parse1 = JSON.parse('{"name":"Cayde 6","age":26,"id":666,"sex":true}');
+        console.log(parse1);// {name: "Cayde 6", age: 26, id: 666, sex: true}
+
+
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

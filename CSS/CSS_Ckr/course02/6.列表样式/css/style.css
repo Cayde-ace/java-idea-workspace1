@@ -1,0 +1,42 @@
+#nav{
+    width: 320px;
+    background: mediumpurple;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 40px;
+    /* 颜色，图片，图片位置，平铺方式 */
+    /* 300px 14px：在浏览器页面调好复制过来 */
+    background: pink url("../images/down.gif") 300px 14px no-repeat;
+}
+
+/*
+list-style:
+    none 去掉原点
+    circle 空心圆
+    decimal 数字
+    square 正方形
+*/
+ul li{
+    height: 35px;
+    list-style: none;
+    text-indent: 1em;
+    background-image: url("../images/right.gif");
+    background-repeat: no-repeat;
+    /* 265px 5px：在浏览器页面调好复制过来 */
+    background-position: 265px 5px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+a:hover{
+    color: deeppink;
+    text-decoration: underline;
+}

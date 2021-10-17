@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+
+    <style>
+
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        #father{
+            border: 2px solid black;
+            padding: 0;
+            /*
+             1.使用了绝对定位的元素以它最近的一个 “已经定位” 的 “祖先元素” 为基准进行偏移
+             2.如果没有已经定位的祖先元素，会以浏览器窗口为基准进行定位
+             */
+            /* 如下，已经定位 */
+            position: relative;
+        }
+
+        #first{
+            background-color: skyblue;
+            border: 2px dashed blue;
+        }
+
+        #second{
+            background-color: pink;
+            border: 2px dashed darkviolet;
+            position: absolute;
+            left: 100px;
+        }
+
+        #third{
+            background-color: orange;
+            border: 2px dashed orangered;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+
+</body>
+
+</html>

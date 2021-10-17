@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+
+    <style>
+
+        /*
+        颜色：
+            1.单词，如 darkviolet
+            2.RGB 0~F，如 #00FFFF
+            3.RGBA  A：0~1（透明度） 如 rgba(0,255,255,0.8)
+        */
+        /*
+        text-align：设置元素水平对齐方式（排版），如：居中 center
+        */
+        h1{
+            /*color: darkviolet;*/
+            /*color: #00FFFF;*/
+            color: rgba(0,255,255,0.8);
+            text-align: center;
+        }
+
+        /*
+        text-indent：设置文本的首行缩进，一般为 2em（2个字符），段落首行缩进
+        */
+        .p1{
+            text-indent: 2em;
+        }
+
+        /*
+        height: 300px; 设置块的行高
+        line-height: 300px; 设置文本的行高
+        文本的高度和块的高度一致，就可以实现上下居中
+        */
+        .p2{
+            color: deeppink;
+            background: darkviolet;
+            height: 200px;
+            line-height: 200px;
+        }
+
+        /* 下划线 */
+        .y1{
+            text-decoration: underline;
+        }
+        /* 中划线 */
+        .y2{
+            text-decoration: line-through;
+        }
+        /* 上划线 */
+        .y3{
+            text-decoration: overline;
+        }
+
+        /* 超链接去下划线 */
+        a{
+            text-decoration: none;
+        }
+
+        /* 垂直对齐 ~ 参照物：a，b */
+        /* 图片和文本垂直居中对齐 */
+        img,span{
+            vertical-align: middle;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>黑暗之魂三</h1>
+
+<h2 class="y1">洋葱骑士</h2>
+<h2 class="y2">洋葱骑士</h2>
+<h2 class="y3">洋葱骑士</h2>
+
+<a href="">无火的余灰</a>
+
+<p class="p0">
+    <img src="images/cayde.jpg" alt="cayde 6">
+    <span>凯德六号</span>
+</p>
+
+<p class="p1">
+    我知道啊，就算是继续传火也已经拯救不了这个世界了……但是啊……如果就这就放弃了的话，就完全没有任何希望了，这个世界，还有活着的人，这个时代，也还没有灭绝，我会燃尽自己，为这个时代多争取哪怕一分一秒……
+</p>
+
+<p class="p2">
+    I've seen your kind, time and time again. <br/>
+    Every fleeing man must be caught. <br/>
+    Every secret must be unearthed. <br/>
+    Such is the conceit of the self-proclaimed seeker of truth. <br/>
+    But in the end. You lack the stomach. <br/>
+    For the agony you'll bring upon yourself...
+</p>
+
+</body>
+</html>

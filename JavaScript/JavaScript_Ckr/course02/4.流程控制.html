@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流程控制</title>
+
+    <script>
+
+        'use strict';
+        let o = {
+            name: 'Jack',
+            age: 20,
+            city: 'Beijing'
+        };
+        for (let key in o) {
+            if (o.hasOwnProperty(key)) {
+                console.log(key); // 'name', 'age', 'city'
+                console.log(o[key]);
+            }
+        }
+
+        let a = ['A', 'B', 'C'];
+        for (let i in a) {
+            if(a.hasOwnProperty(i)){
+                console.log(i); // '0', '1', '2'
+                console.log(a[i]); // 'A', 'B', 'C'
+            }
+        }
+
+        // ez
+        // for ... in ... 遍历属性（键） key和下标
+
+    </script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

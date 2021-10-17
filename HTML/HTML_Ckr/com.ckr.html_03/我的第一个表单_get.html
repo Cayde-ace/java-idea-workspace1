@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的第一个表单_get</title>
+</head>
+<body>
+
+<!--
+提交请求：
+携带的参数
+key: 控件的name。这个属性不要忘记
+
+get：携带参数，参数可以在url中看到，不安全，大小有限。
+    https://www.baidu.com/?username=kuangshen&password=123456
+
+post：参数不可见、安全，大小没有限制。  （表单提交常用方式post）
+
+-->
+
+<!--form 表单
+action： 表单提交的位置，可以是一个网站，也可以是一个请求处理地址。
+method：提交的方式，如 get、post。
+-->
+
+
+<!-- http://localhost:63342/HTML/HTML_Ckr/com.ckr.html_03/result.html?username=ckr&password=666666 -->
+<form action="result.html" method="get">
+
+    <!--输入框
+       input 标签
+           name： 必须写上
+           type：
+               text ： 文本框
+               password： 密码框
+               submit： 提交按钮
+               reset： 重置
+       -->
+
+    <p>用户名：<input type="text" name="username"></p>
+    <p>密&nbsp;&nbsp;&nbsp;码：<input type="password" name="password"></p>
+
+    <p>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </p>
+
+</form>
+
+</body>
+</html>
